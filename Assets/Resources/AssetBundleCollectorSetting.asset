@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 185f6993d5150494d98da50e26cb1c25, type: 3}
+  m_Name: AssetBundleCollectorSetting
+  m_EditorClassIdentifier: 
+  ShowPackageView: 0
+  ShowEditorAlias: 1
+  UniqueBundleName: 0
+  Packages:
+  - PackageName: 
+    PackageDesc: 
+    EnableAddressable: 0
+    LocationToLower: 1
+    IncludeAssetGUID: 1
+    AutoCollectShaders: 1
+    IgnoreRuleName: 
+    Groups:
+    - GroupName: ui
+      GroupDesc: "\u6B64\u7EC4\u4EC5\u5305\u542BUI\u76F8\u5173\u8D44\u6E90"
+      AssetTags: 
+      ActiveRuleName: 
+      Collectors:
+      - CollectPath: Assets/Resource/ui/CharacterTypeBtn.prefab
+        CollectorGUID: 1b31705ea1d2f824e8fe4f453bf5d7b2
+        CollectorType: 0
+        AddressRuleName: 
+        PackRuleName: 
+        FilterRuleName: 
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Resource/ui/ChooseCharacter.prefab
+        CollectorGUID: b3412c6b3e1047c49aa30408270e7284
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Resource/ui/LoginPanel.prefab
+        CollectorGUID: 86cbdddd5ef7b74438d2a34be03e3ad4
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
