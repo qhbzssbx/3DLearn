@@ -38,5 +38,12 @@ public class StartArchitecture : Singleton<StartArchitecture>, ISingleton
     {
         return gameArchitecture;
     }
+    /// <summary>
+    /// 初始化框架中的所有模块
+    /// </summary>
+    public void InitAllModulesInArchitecture()
+    {
+        gameArchitecture.InitAllModules();
+    }
 
 }

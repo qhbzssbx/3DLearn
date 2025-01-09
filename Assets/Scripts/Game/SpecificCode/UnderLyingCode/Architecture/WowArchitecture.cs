@@ -6,7 +6,7 @@ public class WowArchitecture : Architecture<WowArchitecture>
 {
     protected override void Init()
     {
-
+        this.RegistSystem<IUISystem>(new UISystem());
     }
 }
 

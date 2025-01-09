@@ -34,8 +34,14 @@ public class IOCContainer
         }
         return null;
     }
-
+    /// <summary>
+    /// 所有实例的初始化
+    /// </summary>
     public void InitAllModules()
     {
+        foreach (var item in instancesDict)
+        {
+            ((INeedInit)item.Value).Init();
+        }
     }
 }
