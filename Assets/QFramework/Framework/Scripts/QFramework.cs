@@ -26,6 +26,8 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Cysharp.Threading.Tasks;
+
 
 namespace QFramework
 {
@@ -69,7 +71,7 @@ namespace QFramework
 
         protected static T mArchitecture;
 
-        public static IArchitecture Interface
+        public static T Interface
         {
             get
             {
@@ -84,7 +86,7 @@ namespace QFramework
             if (mArchitecture == null)
             {
                 mArchitecture = new T();
-                mArchitecture.Init();
+                // mArchitecture.Init();
 
                 OnRegisterPatch?.Invoke(mArchitecture);
 
@@ -437,6 +439,10 @@ namespace QFramework
         bool Initialized { get; set; }
         void Init();
         void Deinit();
+    }
+    public interface ICanAsyncInit
+    {
+        UniTaskVoid AsyncInit();
     }
 
     #endregion
