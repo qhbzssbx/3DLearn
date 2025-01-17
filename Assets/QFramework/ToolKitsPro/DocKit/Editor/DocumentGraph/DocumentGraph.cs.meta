@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFramework/ToolKitsPro/DocKit/Editor/DocumentGraph/DocumentGraph.cs.meta
 guid: 5ce758c6538f748b0b985214bf6b055e
+========
+guid: 4683a1e075d2b481385077db21cddf15
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scripts/Command/FullBulletCommand.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

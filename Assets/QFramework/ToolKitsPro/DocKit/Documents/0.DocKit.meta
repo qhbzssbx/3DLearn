@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFramework/ToolKitsPro/DocKit/Documents/0.DocKit.meta
 guid: dc31f20071f464286b2e7ad1ec606345
+========
+guid: 9ec75fe65d9b1954ea81bc55b16842c1
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/QFramework/Framework/Examples/11.SnakeGame/Codes/Command.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

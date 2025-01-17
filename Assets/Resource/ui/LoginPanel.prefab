@@ -510,6 +510,7 @@ GameObject:
   - component: {fileID: 9035450556008071615}
   - component: {fileID: 5797128873463842014}
   - component: {fileID: 3220517761128043911}
+  - component: {fileID: 4306241606425809762}
   m_Layer: 5
   m_Name: ipt_account
   m_TagString: Untagged
@@ -673,6 +674,22 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!114 &4306241606425809762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4446692620096335613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: ipt_account
+  CustomComment: 
+  mComponentName: TMPro.TMP_InputField
 --- !u!1 &4597965243233406272
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,6 +702,7 @@ GameObject:
   - component: {fileID: 2549666499253099021}
   - component: {fileID: 5161399722934962999}
   - component: {fileID: 1722416769246134702}
+  - component: {fileID: 8565531614968406949}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -794,6 +812,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8565531614968406949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597965243233406272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: ipt_account
+  CustomComment: 
+  mComponentName: UnityEngine.UI.Button
 --- !u!1 &5096541779124332909
 GameObject:
   m_ObjectHideFlags: 0
@@ -937,6 +971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1524583906520080606}
+  - component: {fileID: 8724184565061270743}
   m_Layer: 5
   m_Name: LoginPanel
   m_TagString: Untagged
@@ -967,6 +1002,28 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8724184565061270743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5247385886634854633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a8e7d393a73eae418b0f92a5a4ead74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Namespace: GF.UI
+  ScriptName: LoginPanel
+  ScriptsFolder: Assets/Scripts/UI
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Resource/ui
+  ArchitectureFullTypeName: 
+  ViewControllerFullTypeName: 
+  ipt_account: {fileID: 3220517761128043911}
+  ipt_password: {fileID: 8006442749192489720}
+  Button: {fileID: 1722416769246134702}
 --- !u!1 &7839851257061573564
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +1036,7 @@ GameObject:
   - component: {fileID: 4291183295036374870}
   - component: {fileID: 120351736371300466}
   - component: {fileID: 8006442749192489720}
+  - component: {fileID: 1857239923712471221}
   m_Layer: 5
   m_Name: ipt_password
   m_TagString: Untagged
@@ -1142,6 +1200,22 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
+--- !u!114 &1857239923712471221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7839851257061573564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: ipt_account
+  CustomComment: 
+  mComponentName: TMPro.TMP_InputField
 --- !u!1 &8174699133091076872
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFramework/ToolKitsPro/DocKit.meta
 guid: 3d5c0842f6ca44d8282d87c30f23ce7d
+========
+guid: 175497e7bf00c4943800e750f724d9a6
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/QFramework/Framework/Examples/0.CounterApp.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

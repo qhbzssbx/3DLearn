@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFramework/ToolKitsPro/DocKit/Editor/ClassGraph/ClassGraph.cs.meta
 guid: 8bc2e762ed5174d62a7884abf074ae7e
+========
+guid: 936cc68016b478b4c9d7ded48d76ef80
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/QFramework/Framework/Examples/0.CounterApp/Scripts/CounterAppController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

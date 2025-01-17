@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFramework/ToolKitsPro/DocKit/Documents.meta
 guid: 338af4ed8aaa4437384af6b8b3aceeef
+========
+guid: ff25e979aeef8be45b4c745108cdd039
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/Scripts/Game.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

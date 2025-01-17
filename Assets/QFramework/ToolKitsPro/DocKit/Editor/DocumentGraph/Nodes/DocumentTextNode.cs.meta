@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFramework/ToolKitsPro/DocKit/Editor/DocumentGraph/Nodes/DocumentTextNode.cs.meta
 guid: 5ee4aac409f424a4d8516ae97b9e5cb6
+========
+guid: 84bfecba3cb7b484fa8162fd3ebd77be
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/QFramework/Framework/Examples/1.QueryExample/QueryExampleController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

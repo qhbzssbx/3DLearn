@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/QFrameworkData/LiveCodingKit.meta
 guid: 4e9ab54727e1b8d4997e82201199686c
+========
+guid: 5a6ef7769f93a4ffeb7845abf2e2a530
+>>>>>>>> parent of 59ce0a6 (fix: 框架调整):Assets/QFramework/Framework/Examples.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
