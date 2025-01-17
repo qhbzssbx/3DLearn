@@ -11,22 +11,22 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ARTnGAME/InfiniGRASS STUDIO PRO/UnityURP-Grass Instanced Indirect/Demo/InstancedIndirectGrass/TestScene/scene.unity
     guid: b4bb10ac330c5c04680371d58f56a3a1
-  - enabled: 1
+  - enabled: 0
     path: Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scenes/GameOver.unity
     guid: 23e2160d7a6944aa3976879b906e594e
-  - enabled: 1
+  - enabled: 0
     path: Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scenes/GamePass.unity
     guid: bccb2fcd3dfeb47e5a0a07e2cdee85ec
-  - enabled: 1
+  - enabled: 0
     path: Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scenes/GameStart.unity
     guid: 3419c7cc39a03417fb3db1f1cd2416f0
-  - enabled: 1
+  - enabled: 0
     path: Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scenes/LevelEditor.unity
     guid: 07898bcec9cd94372ab6f9b7bd55c453
-  - enabled: 1
+  - enabled: 0
     path: Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scenes/LevelPlayer.unity
     guid: 9122a2d11831f450abbb6620d7590357
-  - enabled: 1
+  - enabled: 0
     path: Assets/QFramework/Framework/Examples/10.ShootingEditor2D/Scenes/Game.unity
     guid: 821e06d1dd865fc4eb5d5795ab633563
   m_configObjects: {}
