@@ -16,20 +16,20 @@ MonoBehaviour:
   ShowEditorAlias: 1
   UniqueBundleName: 0
   Packages:
-  - PackageName: 
+  - PackageName: DefaultPackage
     PackageDesc: 
-    EnableAddressable: 0
-    LocationToLower: 1
+    EnableAddressable: 1
+    LocationToLower: 0
     IncludeAssetGUID: 1
     AutoCollectShaders: 1
-    IgnoreRuleName: 
+    IgnoreRuleName: RawFileIgnoreRule
     Groups:
     - GroupName: ui
       GroupDesc: "\u6B64\u7EC4\u4EC5\u5305\u542BUI\u76F8\u5173\u8D44\u6E90"
       AssetTags: 
-      ActiveRuleName: 
+      ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/Resource/ui/CharacterTypeBtn.prefab
+      - CollectPath: Assets/Resource/UI/CharacterTypeBtn.prefab
         CollectorGUID: 1b31705ea1d2f824e8fe4f453bf5d7b2
         CollectorType: 0
         AddressRuleName: 
@@ -37,7 +37,7 @@ MonoBehaviour:
         FilterRuleName: 
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/Resource/ui/ChooseCharacter.prefab
+      - CollectPath: Assets/Resource/UI/ChooseCharacter.prefab
         CollectorGUID: b3412c6b3e1047c49aa30408270e7284
         CollectorType: 0
         AddressRuleName: AddressByFileName
@@ -45,8 +45,21 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
-      - CollectPath: Assets/Resource/ui/LoginPanel.prefab
+      - CollectPath: Assets/Resource/UI/LoginPanel.prefab
         CollectorGUID: 86cbdddd5ef7b74438d2a34be03e3ad4
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+    - GroupName: scene
+      GroupDesc: "\u573A\u666F"
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Scenes/Login.unity
+        CollectorGUID: 078d312d98fe07049944da442a81f69c
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
