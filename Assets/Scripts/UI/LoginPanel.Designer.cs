@@ -12,5 +12,5 @@ namespace GF.UI
 
 		public UnityEngine.UI.Button Button;
 
-	}
+    }
 }

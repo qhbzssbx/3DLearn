@@ -17,6 +17,8 @@ public class GameArchitecture : Architecture<GameArchitecture>
         RegisterSystem(new UISystem());
         RegisterSystem(new SceneSystem());
         RegisterModel(new PlayerModel());
+        RegisterModel(new GameStateModel());
+        RegisterModel(new GameModel());
 
         assetInitResult = await AssetManager.Instance.InitializeYooAsset(); // 初始化资源
         if (!assetInitResult)
@@ -25,7 +27,7 @@ public class GameArchitecture : Architecture<GameArchitecture>
         }
         else if(assetInitResult)
         {
-            
+            GameArchitecture.Interface.SendCommand<SetLaunchStageArchitectureEndOfInitializationCommand>(new SetLaunchStageArchitectureEndOfInitializationCommand());
         }
     }
 

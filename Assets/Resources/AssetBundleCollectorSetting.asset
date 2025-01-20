@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AssetBundleCollectorSetting
   m_EditorClassIdentifier: 
   ShowPackageView: 0
-  ShowEditorAlias: 1
+  ShowEditorAlias: 0
   UniqueBundleName: 0
   Packages:
   - PackageName: DefaultPackage
@@ -22,7 +22,7 @@ MonoBehaviour:
     LocationToLower: 0
     IncludeAssetGUID: 1
     AutoCollectShaders: 1
-    IgnoreRuleName: RawFileIgnoreRule
+    IgnoreRuleName: NormalIgnoreRule
     Groups:
     - GroupName: ui
       GroupDesc: "\u6B64\u7EC4\u4EC5\u5305\u542BUI\u76F8\u5173\u8D44\u6E90"
@@ -32,15 +32,15 @@ MonoBehaviour:
       - CollectPath: Assets/Resource/UI/CharacterTypeBtn.prefab
         CollectorGUID: 1b31705ea1d2f824e8fe4f453bf5d7b2
         CollectorType: 0
-        AddressRuleName: 
-        PackRuleName: 
-        FilterRuleName: 
+        AddressRuleName: AddressByGroupAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
       - CollectPath: Assets/Resource/UI/ChooseCharacter.prefab
         CollectorGUID: b3412c6b3e1047c49aa30408270e7284
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByGroupAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
@@ -48,7 +48,15 @@ MonoBehaviour:
       - CollectPath: Assets/Resource/UI/LoginPanel.prefab
         CollectorGUID: 86cbdddd5ef7b74438d2a34be03e3ad4
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByGroupAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Resource/UI/HotUpdatePanel.prefab
+        CollectorGUID: 13e2a9f61e490dc439a275847911b0a8
+        CollectorType: 0
+        AddressRuleName: AddressByGroupAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 
@@ -61,7 +69,7 @@ MonoBehaviour:
       - CollectPath: Assets/Scenes/Login.unity
         CollectorGUID: 078d312d98fe07049944da442a81f69c
         CollectorType: 0
-        AddressRuleName: AddressByFileName
+        AddressRuleName: AddressByGroupAndFileName
         PackRuleName: PackDirectory
         FilterRuleName: CollectAll
         AssetTags: 

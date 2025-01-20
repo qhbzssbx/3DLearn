@@ -4,8 +4,9 @@ using UnityEngine;
 using QFramework;
 public class UISystem : AbstractSystem
 {
+    private UIRoot uiRoot;
     protected override void OnInit()
     {
-        Debug.Log("UISystem Init");
+        uiRoot = UIRoot.Instance; // 触发UIRoot的加载
     }
 }

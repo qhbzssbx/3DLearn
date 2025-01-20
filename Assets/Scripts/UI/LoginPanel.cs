@@ -3,11 +3,10 @@ using QFramework;
 
 namespace GF.UI
 {
-	public partial class LoginPanel : ViewController
+	public partial class LoginPanel : UIPanel
 	{
-		void Start()
-		{
-			// Code Here
-		}
+        protected override void OnClose()
+        {
+        }
 	}
 }

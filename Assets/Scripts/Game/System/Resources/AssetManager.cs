@@ -6,9 +6,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using YooAsset;
 /// <summary>
-/// 这个类只做初始化,资源热更,销毁相关操作,加载放在AssetSystem中
+/// 这个类只做初始化,资源热更,销毁相关操作,加载放在
 /// </summary>
-public class AssetManager : MonoSingleton<AssetManager>
+public partial class AssetManager : MonoSingleton<AssetManager>
 {
     public EPlayMode ePlayMode = EPlayMode.EditorSimulateMode;
 
@@ -26,7 +26,23 @@ public class AssetManager : MonoSingleton<AssetManager>
         YooAssets.SetDefaultPackage(package);
 
         // StartCoroutine("InitPackage", package);
-        return await InitPackage(package);
+        var result = await InitPackage(package);
+        // 获取资源版本
+        var operation = package.RequestPackageVersionAsync();
+
+        await operation;
+        if (operation.Status != EOperationStatus.Succeed)
+        {
+            // 获取失败
+            Debug.LogError(operation.Error);
+            return false;
+        }
+        string packageVersion = operation.PackageVersion;
+        Debug.Log($"Updated package Version : {packageVersion}");
+        // 更新包Manifest文件
+        await package.UpdatePackageManifestAsync(operation.PackageVersion);
+
+        return result;
     }
 
     private async UniTask<bool> InitPackage(ResourcePackage package)
@@ -101,7 +117,7 @@ public class AssetManager : MonoSingleton<AssetManager>
 
     public IEnumerator LoadScene()
     {
-        string location = "Assets/GameRes/Scene/Login";
+        string location = "Scenes/Login";
         var sceneMode = UnityEngine.SceneManagement.LoadSceneMode.Single;
         var physicsMode = LocalPhysicsMode.None;
         bool suspendLoad = false;
@@ -109,4 +125,5 @@ public class AssetManager : MonoSingleton<AssetManager>
         yield return handle;
         Debug.Log($"Scene name is {handle.SceneName}");
     }
+
 }

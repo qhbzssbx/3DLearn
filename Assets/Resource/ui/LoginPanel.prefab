@@ -1014,13 +1014,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8e7d393a73eae418b0f92a5a4ead74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Namespace: GF.UI
-  ScriptName: LoginPanel
-  ScriptsFolder: Assets/Scripts/UI
-  GeneratePrefab: 0
-  PrefabFolder: Assets/Resource/ui
-  ArchitectureFullTypeName: 
-  ViewControllerFullTypeName: 
   ipt_account: {fileID: 3220517761128043911}
   ipt_password: {fileID: 8006442749192489720}
   Button: {fileID: 1722416769246134702}

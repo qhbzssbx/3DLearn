@@ -33,7 +33,15 @@ public class UIAnim : MonoBehaviour
 
     private void CheckInitStatue()
     {
-        transform_3.DORotate(new Vector3(0, 0, 360), 5, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
+        transform_3.DORotate(new Vector3(0, 0, -360), 5, RotateMode.FastBeyond360).SetEase(Ease.Linear).SetLoops(-1);
+    }
+
+    private void OnDestroy() {
+        root.DOKill();
+        root2.DOKill();
+        transform_1.DOKill();
+        transform_2.DOKill();
+        transform_3.DOKill();
     }
 
 }

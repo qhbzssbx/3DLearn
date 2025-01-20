@@ -28,6 +28,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Object = UnityEngine.Object;
+using YooAsset;
 
 namespace QFramework
 {
@@ -154,9 +155,43 @@ namespace QFramework
             }
         }
 
+        /// <summary>
+        /// Default
+        /// </summary>
+        public class YooAssetPanelLoader : IPanelLoader
+        {
+            // private GameObject mPanelPrefab;
+            private AssetHandle mAssetHandle; // YooAssets 资源句柄
+            private string loadPath;
+
+            public GameObject LoadPanelPrefab(PanelSearchKeys panelSearchKeys)
+            {
+                loadPath = panelSearchKeys.GameObjName;
+                mAssetHandle = YooAssets.LoadAssetSync(loadPath);
+                return mAssetHandle.AssetObject as GameObject;
+            }
+
+            public void LoadPanelPrefabAsync(PanelSearchKeys panelSearchKeys, Action<GameObject> onPanelLoad)
+            {
+                loadPath = panelSearchKeys.GameObjName;
+                var request = YooAssets.LoadAssetAsync(loadPath);
+                request.Completed += operation => { onPanelLoad(request.AssetObject as GameObject); };
+            }
+
+            public void Unload()
+            {
+                // mPanelPrefab = null;
+                var package = YooAssets.GetPackage("DefaultPackage");
+                package.TryUnloadUnusedAsset(loadPath);
+                mAssetHandle.Release();
+                loadPath = "";
+            }
+        }
+
         protected override IPanelLoader CreatePanelLoader()
         {
-            return new DefaultPanelLoader();
+            // return new DefaultPanelLoader();
+            return new YooAssetPanelLoader();
         }
     }
 }

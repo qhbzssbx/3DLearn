@@ -4,20 +4,40 @@ using QFramework;
 using UnityEngine;
 enum LaunchStage
 {
-    AnimPlaying,
-    AnimEnd,
+    None,
+    BeInitializing,
+    EndOfInitialization,
 }
 public class GameStateModel : AbstractModel
 {
-    private LaunchStage launchStage = LaunchStage.AnimPlaying;
+    private const int LAUNCHSTAGETASKCOUNT = 2;
+    private LaunchStage launchStage = LaunchStage.None;
+    private int launchTaskCompleteIndex = 0;
     protected override void OnInit()
     {
+        launchStage = LaunchStage.BeInitializing;
     }
 
-    public void SetLaunchStageToAnimEnd()
+    public void LaunchStageAnimEnd()
     {
-        this.launchStage = LaunchStage.AnimEnd;
+        launchTaskCompleteIndex ++;
+        Debug.Log("启动动画播放完成");
+        // this.SendEvent<LaunchStageChangeToAnimEndEvent>();
+        CheckLaunchStageState();
+    }
 
-        this.SendEvent<LaunchStageChangeToAnimEndEvent>();
+    public void LaunchStageArchitectureEndOfInitialization()
+    {
+        launchTaskCompleteIndex ++;
+        Debug.Log("框架初始化完成");
+        CheckLaunchStageState();
+    }
+
+    public void CheckLaunchStageState()
+    {
+        if (launchTaskCompleteIndex > LAUNCHSTAGETASKCOUNT)
+        {
+            
+        }
     }
 }

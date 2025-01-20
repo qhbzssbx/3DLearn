@@ -122,6 +122,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!224 &1147753 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4796485896119876066, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1904400458}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &21057689
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,6 +720,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 746267635}
     m_Modifications:
+    - target: {fileID: 1430171381988698911, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+        type: 3}
+      propertyPath: transform_3
+      value: 
+      objectReference: {fileID: 1147753}
     - target: {fileID: 1583844879600586271, guid: 1edf064eb3fa8144d825e0b3eaca785b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -814,6 +825,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4796485896119876066, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796485896119876066, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796485896119876066, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796485896119876066, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796485896119876066, guid: 1edf064eb3fa8144d825e0b3eaca785b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5364954739246233639, guid: 1edf064eb3fa8144d825e0b3eaca785b,
         type: 3}
       propertyPath: m_Name
@@ -833,7 +869,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1961813179}
-  - component: {fileID: 1961813178}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -841,21 +876,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1961813178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1961813176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
 --- !u!4 &1961813179
 Transform:
   m_ObjectHideFlags: 0
