@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using Google.Protobuf;
+using Game.Qe.Common.Msg.Proto;
+
+public static class ProtobufCodeInfo
+{
+    public static Dictionary<short, Func<byte[], IMessage>> ProtoCodeToType = new Dictionary<short, Func<byte[], IMessage>>()
+    {
+        {%for code,type in proto_code_to_type.items()%}{ {{code}},(data)=>{{type}}.Parser.ParseFrom(data) },
+        {%endfor%}
+    };
+
+    public static Dictionary<string, short> ProtoTypeToCode = new Dictionary<string, short>()
+    {
+        {%for type,code in proto_type_to_code.items()%}{"{{type}}",{{code}}},
+        {%endfor%}
+    };
+}
