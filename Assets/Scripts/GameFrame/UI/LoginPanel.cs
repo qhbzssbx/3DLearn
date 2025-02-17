@@ -1,12 +1,8 @@
-using UnityEngine;
-using QFramework;
-
-namespace GF.UI
+namespace P5Game.UI
 {
-	public partial class LoginPanel : UIPanel
-	{
-        protected override void OnClose()
+        public partial class LoginPanel : UIPanel
         {
+                
         }
-	}
+
 }

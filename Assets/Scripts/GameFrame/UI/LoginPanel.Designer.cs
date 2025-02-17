@@ -1,16 +1,22 @@
-// Generate Id:64f9c02c-69cb-4082-b001-ed3d99177839
+#if UNITY_EDITOR
+using Sirenix.OdinInspector;
+#endif
 using UnityEngine;
-
-namespace GF.UI
+public partial class LoginPanel : MonoBehaviour
 {
-	public partial class LoginPanel
+
+	public TMPro.TMP_InputField ipt_account;
+
+	public TMPro.TMP_InputField ipt_password;
+
+	public UnityEngine.UI.Button Button;
+	public GameObject go;
+
+	#if UNITY_EDITOR
+	[Button("AutoBind")]
+	public void AutoBind()
 	{
-
-		public TMPro.TMP_InputField ipt_account;
-
-		public TMPro.TMP_InputField ipt_password;
-
-		public UnityEngine.UI.Button Button;
-
-    }
+		go = gameObject;
+	}
+	#endif
 }

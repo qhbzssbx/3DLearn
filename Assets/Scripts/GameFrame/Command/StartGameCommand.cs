@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using QFramework;
 using UnityEngine;
 
-public class StartGameCommand : AbstractCommand
+namespace P5Game.Command
 {
-    protected override void OnExecute()
+    public class StartGameCommand : AbstractCommand
     {
-        GameArchitecture.Interface.GetSystem<SceneSystem>().ChangeScene("Login");
+        protected override void OnExecute()
+        {
+            GameArchitecture.Interface.GetSystem<SceneSystem>().ChangeScene("Login");
+        }
     }
-} 
+}

@@ -1,41 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
+using P5Game.UI;
 using QFramework;
 using UnityEngine;
 using YooAsset;
 
-public class GameArchitecture : Architecture<GameArchitecture>
+namespace P5Game
 {
-    bool assetInitResult = false;
-    protected override async void Init()
+    public class GameArchitecture : Architecture<GameArchitecture>
     {
-        this.RegisterEvent<LaunchStageChangeToAnimEndEvent>(e => {
-            LaunchStateChange();
-        });
-
-        // RegisterModel(new PlayerModel());
-        RegisterModel(new GameStateModel());
-        RegisterModel(new GameModel());
-        // RegisterSystem(new AssetSystem());
-        
-        RegisterSystem(new UISystem());
-        RegisterSystem(new SceneSystem());
-        RegisterSystem(new NetworkManager());
-
-
-        assetInitResult = await AssetManager.Instance.InitializeYooAsset(); // 初始化资源
-        if (!assetInitResult)
+        bool assetInitResult = false;
+        protected override async void Init()
         {
-            // 资源初始化失败
-        }
-        else if(assetInitResult)
-        {
-            GameArchitecture.Interface.SendCommand<SetLaunchStageArchitectureEndOfInitializationCommand>(new SetLaunchStageArchitectureEndOfInitializationCommand());
-        }
-    }
+            this.RegisterEvent<LaunchStageChangeToAnimEndEvent>(e =>
+            {
+                LaunchStateChange();
+            });
 
-    private void LaunchStateChange()
-    {
-        AssetManager.Instance.ChangeScene();
+            // RegisterModel(new PlayerModel());
+            RegisterModel(new GameStateModel());
+            RegisterModel(new GameModel());
+            // RegisterSystem(new AssetSystem());
+
+            RegisterSystem(new UISystem());
+            RegisterSystem(new SceneSystem());
+            RegisterSystem(new NetworkManager());
+
+
+            assetInitResult = await AssetManager.Instance.InitializeYooAsset(); // 初始化资源
+            if (!assetInitResult)
+            {
+                // 资源初始化失败
+            }
+            else if (assetInitResult)
+            {
+                GameArchitecture.Interface.SendCommand<SetLaunchStageArchitectureEndOfInitializationCommand>(new SetLaunchStageArchitectureEndOfInitializationCommand());
+            }
+        }
+
+        private void LaunchStateChange()
+        {
+            AssetManager.Instance.ChangeScene();
+        }
     }
 }
+

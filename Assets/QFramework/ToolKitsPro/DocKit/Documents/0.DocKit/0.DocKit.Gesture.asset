@@ -36,8 +36,8 @@ MonoBehaviour:
   serializedParameterList: []
   stickyNotes: []
   nodeInspectorReference: {fileID: 0}
-  position: {x: -113.6, y: -1240.8, z: 0}
-  scale: {x: 0.8695652, y: 0.8695652, z: 1}
+  position: {x: -470.4, y: -347.2, z: 0}
+  scale: {x: 1.7490063, y: 1.7490063, z: 1}
   mGraphCurrentID2Generate: 0
   references:
     version: 2

@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using QFramework;
 using UnityEngine;
 
-public class GameStart : MonoBehaviour
+namespace P5Game
 {
-    private IArchitecture gameArchitecture;
-    private void Awake() {
-        DontDestroyOnLoad(this.gameObject);
-    }
-    // Start is called before the first frame update
-    void Start()
+    public class GameStart : MonoBehaviour
     {
-        // Game.Interface.SendCommand();
-        gameArchitecture = GameArchitecture.Interface; // 触发初始化
+        private IArchitecture gameArchitecture;
+        private void Awake() {
+            DontDestroyOnLoad(this.gameObject);
+        }
+        // Start is called before the first frame update
+        void Start()
+        {
+            // Game.Interface.SendCommand();
+            gameArchitecture = GameArchitecture.Interface; // 触发初始化
+        }
     }
+    
 }
