@@ -61,6 +61,14 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+      - CollectPath: Assets/Resource/UI/UIRoot.prefab
+        CollectorGUID: d7f15294a66be594e9231ff806d7940e
+        CollectorType: 0
+        AddressRuleName: AddressByGroupAndFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
     - GroupName: scene
       GroupDesc: "\u573A\u666F"
       AssetTags: 

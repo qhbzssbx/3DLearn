@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using P5Game;
+using P5Game.Command;
 using QFramework;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -8,7 +10,7 @@ using YooAsset;
 /// <summary>
 /// 这个类只做初始化,资源热更,销毁相关操作,加载放在
 /// </summary>
-public partial class AssetManager : MonoSingleton<AssetManager>
+public partial class AssetManager : MonoSingleton<AssetManager>, ICanSendCommand
 {
     public EPlayMode ePlayMode = EPlayMode.EditorSimulateMode;
 
@@ -117,13 +119,18 @@ public partial class AssetManager : MonoSingleton<AssetManager>
 
     public IEnumerator LoadScene()
     {
-        string location = "Login";
+        string location = "Assets/Scenes/Login";
         var sceneMode = UnityEngine.SceneManagement.LoadSceneMode.Single;
         var physicsMode = LocalPhysicsMode.None;
         bool suspendLoad = false;
         SceneHandle handle = package.LoadSceneAsync(location, sceneMode, physicsMode, suspendLoad);
         yield return handle;
         Debug.Log($"Scene name is {handle.SceneName}");
+        this.SendCommand<UpdateCameraCommand>();
     }
 
+    public IArchitecture GetArchitecture()
+    {
+        return GameArchitecture.Interface;
+    }
 }

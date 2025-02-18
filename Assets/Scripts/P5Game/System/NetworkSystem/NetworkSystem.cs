@@ -76,7 +76,6 @@ public class TcpManager : Singleton<TcpManager>
 
     public event ReceiveCallback CallBack;
 
-
     /**
      * 字符最大值
      */
@@ -108,6 +107,7 @@ public class TcpManager : Singleton<TcpManager>
     private static byte HEAD_FLAG3 = 38;
     private static byte HEAD_FLAG4 = 48;
 
+    private TcpManager(){}
 
     // 连接到服务器（在UI按钮或初始化时调用）
     public void Connect(string ip, int port)

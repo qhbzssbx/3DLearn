@@ -7,6 +7,8 @@ using System.Reflection;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using UnityEditor;
+using YooAsset;
+using UnityEngine.Rendering.Universal;
 
 namespace P5Game.UI
 {
@@ -56,7 +58,8 @@ namespace P5Game.UI
 
     public class UISystem : AbstractSystem
     {
-        public Transform UIParent;
+        public Transform uiRoot;
+        public Transform uiParent;
 
         private IUIResourceLoader uIResourceLoader;
 
@@ -85,20 +88,41 @@ namespace P5Game.UI
             }
 
             uIResourceLoader = new DefaultUIResourceLoader();
+
+            var assetHandle = uIResourceLoader.LoadPrefab("UI/UIRoot");
+            uiRoot = assetHandle.GetGameObjectInstantiate().transform;
+            assetHandle.Release();
+
+            uiParent = uiRoot.Find("UICanvas").transform;
+
+            GameObject.DontDestroyOnLoad(uiRoot);
         }
 
         public void OpenUI(string panelName)
         {
             if (_panelTypes.TryGetValue(panelName, out Type panelType))
             {
-                IAssetHandle assetHandle = uIResourceLoader.LoadPrefab("UI/" + panelName + ".prefab");
+                IAssetHandle assetHandle = uIResourceLoader.LoadPrefab("UI/" + panelName);
                 GameObject uiGo = assetHandle.GetGameObjectInstantiate();
 
-                UIPanel panel = uiGo.AddComponent(panelType) as UIPanel;
+                UIPanel panel = uiGo.GetComponent(panelType) as UIPanel;
+                if (panel == null)
+                {
+                    panel = uiGo.AddComponent(panelType) as UIPanel;
+                }
                 panel.handle = assetHandle;
+                
 
-                sortingOrder += uiLayerInterval;
-                uiGo.GetComponent<Canvas>().sortingOrder = sortingOrder;
+                var canvas = uiGo.GetComponent<Canvas>();
+                if (canvas != null)
+                {   
+                    canvas.worldCamera = this.GetSystem<CameraSystem>().UICamera;
+                    sortingOrder += uiLayerInterval;
+                    canvas.sortingOrder = sortingOrder;
+                }
+                uiGo.transform.SetParent(uiParent);
+                uiGo.transform.localPosition = Vector3.zero;
+                uiGo.transform.localScale = new Vector3(1,1,1);
 
                 uIPanelStacks.Push(panel);
                 panel.Show();
@@ -236,7 +260,7 @@ namespace P5Game.UI
 
         public void Release()
         {
-            GameObject.Destroy(Go);
+            // GameObject.Destroy(Go);
         }
 
         public GameObject GetGameObjectInstantiate()

@@ -9,10 +9,12 @@ namespace P5Game.UI
 	public partial class LoginPanel2 : MonoBehaviour
 	{
 		private GameObject go;
+#if UNITY_EDITOR
 		[Button("AutoBind")]
 		public void AutoBind()
 		{
 			go = gameObject;
 		}
+#endif
 	}
 }

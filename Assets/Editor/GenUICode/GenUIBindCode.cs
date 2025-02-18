@@ -68,10 +68,4 @@ public class GenUIBindCode : Editor
         // };
 
     }
-
-    [UnityEditor.Callbacks.DidReloadScripts(0)]
-    static void OnScriptReload()
-    {
-    	Debug.Log("脚本编译完毕");
-    }
 }
