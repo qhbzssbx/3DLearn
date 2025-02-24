@@ -16,7 +16,7 @@ def main(protobuf_code_path, save_path):
         code += f.read()
         f.close()
 
-    pattern = "SC_.+;"
+    pattern = "(?:CS|SC)_.+;"
     msg_codes = re.findall(pattern, content)
 
     proto_code_to_type = {}

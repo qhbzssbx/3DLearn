@@ -2,8 +2,8 @@
 setlocal
 
 REM 设置路径
-set PROTO_DIR=F:\Project\Project5\proto
-set OUTPUT_DIR=%~dp0..\Assets\Scripts\GameFrame\ProtoBuf
+set PROTO_DIR=%~dp0proto
+set OUTPUT_DIR=%~dp0..\Assets\Scripts\P5Game\ProtoBuf
 set PROTOC_PATH=F:\Project\Project5\protoc-29.3-win64\bin\protoc.exe
 
 REM 检查 protoc.exe 是否存在

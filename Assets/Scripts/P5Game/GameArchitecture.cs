@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
+using LitJson;
 using P5Game.UI;
 using P5Game.Utility;
 using QFramework;
 using UnityEngine;
-using YooAsset;
 
 namespace P5Game
 {
@@ -16,7 +14,6 @@ namespace P5Game
         {
             this.RegisterEvent<LaunchStageChangeToAnimEndEvent>(e =>
             {
-                CheckVersion();
                 LaunchStateChange();
             });
 
@@ -30,16 +27,18 @@ namespace P5Game
             RegisterSystem(new SceneSystem());
             RegisterSystem(new NetworkManager());
 
-
-            assetInitResult = await AssetManager.Instance.InitializeYooAsset(); // 初始化资源
+            assetInitResult = await AssetManager.Instance.InitializeYooAsset(); // 初始化资源]
             if (!assetInitResult)
             {
                 // 资源初始化失败
             }
             else if (assetInitResult)
             {
-                GameArchitecture.Interface.SendCommand<SetLaunchStageArchitectureEndOfInitializationCommand>(new SetLaunchStageArchitectureEndOfInitializationCommand());
+                CheckVersion();
+
+                
             }
+
         }
 
         public class LoginRequest
@@ -51,11 +50,15 @@ namespace P5Game
         }
         private void CheckVersion()
         {
-            // 发送登录请求
-            var requestData = new LoginRequest { channel = "test", platform = "Editor", device = SystemInfo.deviceModel, uuid = SystemInfo.deviceUniqueIdentifier};
+            // 请求版本信息
+            JsonData jsonData = new JsonData();
+            jsonData["channel"] = "test";
+            jsonData["platform"] = "Editor";
+            jsonData["device"] = SystemInfo.deviceModel;
+            jsonData["uuid"] = SystemInfo.deviceUniqueIdentifier;
             HttpUtility.PostAsync(
-                "http://192.168.10.22:13001/version/fetch",
-                requestData,
+                "http://192.168.10.230:12001/version/fetch",
+                jsonData,
                 result => 
                 {
                     if (result.IsSuccess)
@@ -69,6 +72,16 @@ namespace P5Game
                         Debug.Log($"      downloadUrl : {result.Data["data"]["downloadUrl"]}");
                         Debug.Log($"      hotfixUrl : {result.Data["data"]["hotfixUrl"]}");
                         Debug.Log($"      publicKey : {result.Data["data"]["publicKey"]}");
+                        var appVer = result.Data["data"]["appVersion"];
+                        var resVer = result.Data["data"]["resVersion"];
+                        
+                        if (int.Parse(appVer.ToString()) == GetModel<GameModel>().AppVersion)
+                        {
+                            if (int.Parse(resVer.ToString()) >= GetModel<GameModel>().ResVersion)
+                            {
+                                GameArchitecture.Interface.SendCommand<SetLaunchStageArchitectureEndOfInitializationCommand>(new SetLaunchStageArchitectureEndOfInitializationCommand());
+                            }
+                        }
                     }
                     else
                     {

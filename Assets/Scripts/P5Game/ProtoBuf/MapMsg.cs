@@ -39,7 +39,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
   #region Messages
   /// <summary>
-  ///地图对象移动
+  ///* 地图对象移动 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SC_map_object_move_msg : pb::IMessage<SC_map_object_move_msg>

@@ -29,11 +29,11 @@ namespace Game.Qe.Common.Msg.Proto {
             "b21NYXBJZBgCIAEoBRISCgpmcm9tUm9vbUlkGAMgASgFEg8KB3RvTWFwSWQY",
             "BCABKAUSEAoIdG9Sb29tSWQYBSABKAUSCwoDY21kGAYgASgJEg4KBnBhcmFt",
             "cxgHIAMoBRIRCglzdHJQYXJhbXMYCCADKAkilgEKFlNTX2dhbWVfcm9sZV9l",
-            "dmVudF9tc2cSDwoHZXZlbnRJZBgBIAEoBRIQCghwbGF5ZXJJZBgCIAEoAxIO",
-            "CgZyb2xlSWQYAyABKAMSDQoFbWFwSWQYBCABKAUSDgoGcm9vbUlkGAUgASgF",
+            "dmVudF9tc2cSDwoHZXZlbnRJZBgBIAEoBRIQCghwbGF5ZXJJZBgCIAEoBRIO",
+            "CgZyb2xlSWQYAyABKAUSDQoFbWFwSWQYBCABKAUSDgoGcm9vbUlkGAUgASgF",
             "Eg0KBW9iaklkGAYgASgDEgsKA2NtZBgHIAEoCRIOCgZwYXJhbXMYCCADKAUi",
             "3wEKFVNTX2dhbWVfcm9sZV9qdW1wX21zZxIMCgRzdGVwGAEgASgFEhAKCHBs",
-            "YXllcklkGAIgASgDEg4KBnJvbGVJZBgDIAEoAxIRCglmcm9tTWFwSWQYBCAB",
+            "YXllcklkGAIgASgFEg4KBnJvbGVJZBgDIAEoBRIRCglmcm9tTWFwSWQYBCAB",
             "KAUSEgoKZnJvbVJvb21JZBgFIAEoBRIPCgd0b01hcElkGAYgASgFEhAKCHRv",
             "Um9vbUlkGAcgASgFEg0KBXBvaW50GAggASgFEgwKBGRpc3QYCSABKAUSDQoF",
             "Zm9yY2UYCiABKAgSDgoGcGFyYW1zGAsgAygFEhAKCHRvUm9sZUlkGAwgASgD",
@@ -56,7 +56,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
   #region Messages
   /// <summary>
-  ///服务器之间传递地图事件
+  ///* 服务器之间传递地图事件 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SS_game_map_event_msg : pb::IMessage<SS_game_map_event_msg>
@@ -114,7 +114,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int EventIdFieldNumber = 1;
     private int eventId_;
     /// <summary>
-    ///事件ID
+    ///* 事件ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -129,7 +129,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int FromMapIdFieldNumber = 2;
     private int fromMapId_;
     /// <summary>
-    ///来源地图
+    ///* 来源地图 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -144,7 +144,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int FromRoomIdFieldNumber = 3;
     private int fromRoomId_;
     /// <summary>
-    ///来源房间
+    ///* 来源房间 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -159,7 +159,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToMapIdFieldNumber = 4;
     private int toMapId_;
     /// <summary>
-    ///目标地图ID
+    ///* 目标地图ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -174,7 +174,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToRoomIdFieldNumber = 5;
     private int toRoomId_;
     /// <summary>
-    ///目标房间ID
+    ///* 目标房间ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -189,7 +189,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int CmdFieldNumber = 6;
     private string cmd_ = "";
     /// <summary>
-    ///命令
+    ///* 命令 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -206,7 +206,7 @@ namespace Game.Qe.Common.Msg.Proto {
         = pb::FieldCodec.ForInt32(58);
     private readonly pbc::RepeatedField<int> params_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///参数数组
+    ///* 参数数组 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -517,7 +517,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///服务器之间传递角色事件
+  ///* 服务器之间传递角色事件 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SS_game_role_event_msg : pb::IMessage<SS_game_role_event_msg>
@@ -585,13 +585,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "playerId" field.</summary>
     public const int PlayerIdFieldNumber = 2;
-    private long playerId_;
+    private int playerId_;
     /// <summary>
-    ///账号ID
+    ///* 账号ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PlayerId {
+    public int PlayerId {
       get { return playerId_; }
       set {
         playerId_ = value;
@@ -600,13 +600,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "roleId" field.</summary>
     public const int RoleIdFieldNumber = 3;
-    private long roleId_;
+    private int roleId_;
     /// <summary>
-    ///角色ID
+    ///* 角色ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long RoleId {
+    public int RoleId {
       get { return roleId_; }
       set {
         roleId_ = value;
@@ -617,7 +617,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int MapIdFieldNumber = 4;
     private int mapId_;
     /// <summary>
-    ///地图ID
+    ///* 地图ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -632,7 +632,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int RoomIdFieldNumber = 5;
     private int roomId_;
     /// <summary>
-    ///房间ID
+    ///* 房间ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -647,7 +647,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ObjIdFieldNumber = 6;
     private long objId_;
     /// <summary>
-    ///地图对象ID
+    ///* 地图对象ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -662,7 +662,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int CmdFieldNumber = 7;
     private string cmd_ = "";
     /// <summary>
-    ///命令
+    ///* 命令 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -679,7 +679,7 @@ namespace Game.Qe.Common.Msg.Proto {
         = pb::FieldCodec.ForInt32(66);
     private readonly pbc::RepeatedField<int> params_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///参数数组
+    ///* 参数数组 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -718,8 +718,8 @@ namespace Game.Qe.Common.Msg.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (EventId != 0) hash ^= EventId.GetHashCode();
-      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
-      if (RoleId != 0L) hash ^= RoleId.GetHashCode();
+      if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
+      if (RoleId != 0) hash ^= RoleId.GetHashCode();
       if (MapId != 0) hash ^= MapId.GetHashCode();
       if (RoomId != 0) hash ^= RoomId.GetHashCode();
       if (ObjId != 0L) hash ^= ObjId.GetHashCode();
@@ -747,13 +747,13 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(EventId);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
-      if (RoleId != 0L) {
+      if (RoleId != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(RoleId);
+        output.WriteInt32(RoleId);
       }
       if (MapId != 0) {
         output.WriteRawTag(32);
@@ -786,13 +786,13 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(EventId);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
-      if (RoleId != 0L) {
+      if (RoleId != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(RoleId);
+        output.WriteInt32(RoleId);
       }
       if (MapId != 0) {
         output.WriteRawTag(32);
@@ -824,11 +824,11 @@ namespace Game.Qe.Common.Msg.Proto {
       if (EventId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(EventId);
       }
-      if (PlayerId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      if (PlayerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
-      if (RoleId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoleId);
+      if (RoleId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoleId);
       }
       if (MapId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(MapId);
@@ -858,10 +858,10 @@ namespace Game.Qe.Common.Msg.Proto {
       if (other.EventId != 0) {
         EventId = other.EventId;
       }
-      if (other.PlayerId != 0L) {
+      if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
-      if (other.RoleId != 0L) {
+      if (other.RoleId != 0) {
         RoleId = other.RoleId;
       }
       if (other.MapId != 0) {
@@ -901,11 +901,11 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
-            RoleId = input.ReadInt64();
+            RoleId = input.ReadInt32();
             break;
           }
           case 32: {
@@ -953,11 +953,11 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
-            RoleId = input.ReadInt64();
+            RoleId = input.ReadInt32();
             break;
           }
           case 32: {
@@ -1048,7 +1048,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int StepFieldNumber = 1;
     private int step_;
     /// <summary>
-    ///步骤 0：请求跳转 1:离开地图 2:进入地图
+    ///* 步骤 0：请求跳转 1:离开地图 2:进入地图 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1061,13 +1061,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "playerId" field.</summary>
     public const int PlayerIdFieldNumber = 2;
-    private long playerId_;
+    private int playerId_;
     /// <summary>
-    ///账号ID
+    ///* 账号ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PlayerId {
+    public int PlayerId {
       get { return playerId_; }
       set {
         playerId_ = value;
@@ -1076,13 +1076,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "roleId" field.</summary>
     public const int RoleIdFieldNumber = 3;
-    private long roleId_;
+    private int roleId_;
     /// <summary>
-    ///角色ID
+    ///* 角色ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long RoleId {
+    public int RoleId {
       get { return roleId_; }
       set {
         roleId_ = value;
@@ -1093,7 +1093,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int FromMapIdFieldNumber = 4;
     private int fromMapId_;
     /// <summary>
-    ///来源地图ID
+    ///* 来源地图ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1108,7 +1108,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int FromRoomIdFieldNumber = 5;
     private int fromRoomId_;
     /// <summary>
-    ///来源房间ID
+    ///* 来源房间ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1123,7 +1123,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToMapIdFieldNumber = 6;
     private int toMapId_;
     /// <summary>
-    ///目标地图ID
+    ///* 目标地图ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1138,7 +1138,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToRoomIdFieldNumber = 7;
     private int toRoomId_;
     /// <summary>
-    ///目标房间ID
+    ///* 目标房间ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1153,7 +1153,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int PointFieldNumber = 8;
     private int point_;
     /// <summary>
-    ///坐标
+    ///* 坐标 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1168,7 +1168,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int DistFieldNumber = 9;
     private int dist_;
     /// <summary>
-    ///坐标范围
+    ///* 坐标范围 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1183,7 +1183,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ForceFieldNumber = 10;
     private bool force_;
     /// <summary>
-    ///强制(忽略地图是否开启)
+    ///* 强制(忽略地图是否开启) *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1200,7 +1200,7 @@ namespace Game.Qe.Common.Msg.Proto {
         = pb::FieldCodec.ForInt32(90);
     private readonly pbc::RepeatedField<int> params_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///参数
+    ///* 参数 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1212,7 +1212,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToRoleIdFieldNumber = 12;
     private long toRoleId_;
     /// <summary>
-    /// 目标角色
+    ///* 目标角色 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1258,8 +1258,8 @@ namespace Game.Qe.Common.Msg.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Step != 0) hash ^= Step.GetHashCode();
-      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
-      if (RoleId != 0L) hash ^= RoleId.GetHashCode();
+      if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
+      if (RoleId != 0) hash ^= RoleId.GetHashCode();
       if (FromMapId != 0) hash ^= FromMapId.GetHashCode();
       if (FromRoomId != 0) hash ^= FromRoomId.GetHashCode();
       if (ToMapId != 0) hash ^= ToMapId.GetHashCode();
@@ -1291,13 +1291,13 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Step);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
-      if (RoleId != 0L) {
+      if (RoleId != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(RoleId);
+        output.WriteInt32(RoleId);
       }
       if (FromMapId != 0) {
         output.WriteRawTag(32);
@@ -1346,13 +1346,13 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Step);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
-      if (RoleId != 0L) {
+      if (RoleId != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(RoleId);
+        output.WriteInt32(RoleId);
       }
       if (FromMapId != 0) {
         output.WriteRawTag(32);
@@ -1400,11 +1400,11 @@ namespace Game.Qe.Common.Msg.Proto {
       if (Step != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Step);
       }
-      if (PlayerId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      if (PlayerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
-      if (RoleId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(RoleId);
+      if (RoleId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(RoleId);
       }
       if (FromMapId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(FromMapId);
@@ -1446,10 +1446,10 @@ namespace Game.Qe.Common.Msg.Proto {
       if (other.Step != 0) {
         Step = other.Step;
       }
-      if (other.PlayerId != 0L) {
+      if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
-      if (other.RoleId != 0L) {
+      if (other.RoleId != 0) {
         RoleId = other.RoleId;
       }
       if (other.FromMapId != 0) {
@@ -1501,11 +1501,11 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
-            RoleId = input.ReadInt64();
+            RoleId = input.ReadInt32();
             break;
           }
           case 32: {
@@ -1569,11 +1569,11 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
-            RoleId = input.ReadInt64();
+            RoleId = input.ReadInt32();
             break;
           }
           case 32: {
@@ -1676,7 +1676,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///对象类型 1 : NPC 2 : drop -- 掉落  5 : growable -- 植物 7 : effect -- 特效对象 10 : gang -- 门派石 14：mechanism -- 机关
+    ///* 对象类型 1 : NPC 2 : drop -- 掉落  5 : growable -- 植物 7 : effect -- 特效对象 10 : gang -- 门派石 14：mechanism -- 机关 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1691,7 +1691,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IdFieldNumber = 2;
     private long id_;
     /// <summary>
-    ///对象表ID
+    ///* 对象表ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1706,7 +1706,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int FromMapIdFieldNumber = 3;
     private int fromMapId_;
     /// <summary>
-    ///来源地图ID
+    ///* 来源地图ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1721,7 +1721,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int FromRoomIdFieldNumber = 4;
     private int fromRoomId_;
     /// <summary>
-    ///来源房间ID
+    ///* 来源房间ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1736,7 +1736,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToMapIdFieldNumber = 5;
     private int toMapId_;
     /// <summary>
-    ///目标地图ID
+    ///* 目标地图ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1751,7 +1751,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ToRoomIdFieldNumber = 6;
     private int toRoomId_;
     /// <summary>
-    ///目标房间ID
+    ///* 目标房间ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1766,7 +1766,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int PointFieldNumber = 7;
     private int point_;
     /// <summary>
-    ///坐标
+    ///* 坐标 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1783,7 +1783,7 @@ namespace Game.Qe.Common.Msg.Proto {
         = pb::FieldCodec.ForInt32(66);
     private readonly pbc::RepeatedField<int> params_ = new pbc::RepeatedField<int>();
     /// <summary>
-    ///对象参数 NPC：血量 掉落：时间 植物：时间 机关：血量
+    ///* 对象参数 NPC：血量 掉落：时间 植物：时间 机关：血量 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]

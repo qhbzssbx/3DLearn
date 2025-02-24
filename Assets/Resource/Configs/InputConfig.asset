@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 177b856bb6d74f0469e323ad9f971483, type: 3}
-  m_Name: InputConfig
+  m_Name: Assets/Resource/Configs/InputConfig.asset
   m_EditorClassIdentifier: 
   MoveHorizontalAction: MoveH
   MoveVerticalAction: MoveV
   AttackAction: Attack
-  CombatToggleAction: CombatToggle
+  CancelAttackAction: CancelAttack
   MoveDeadzone: 0.2
   ComboWindowDuration: 0.3
   MinChargeDuration: 1.5

@@ -28,32 +28,31 @@ namespace Game.Qe.Common.Msg.Proto {
             "Cg9EQVRBX3NlcnZlcl9tc2cSDAoEdHlwZRgBIAEoBRIKCgJpZBgCIAEoBRIM",
             "CgRuYW1lGAMgASgJEgoKAmlwGAQgASgJEgwKBHBvcnQYBSABKAUSDQoFc3Rh",
             "dGUYBiABKAUiQgoOREFUQV9yb3V0ZV9tc2cSDAoEdHlwZRgBIAEoBRIQCghw",
-            "bGF5ZXJJZBgCIAEoAxIQCghzZXJ2ZXJJZBgDIAEoBSJ8ChhSRVFfc2VydmVy",
+            "bGF5ZXJJZBgCIAEoBRIQCghzZXJ2ZXJJZBgDIAEoBSJrChhSRVFfc2VydmVy",
             "X2hhbmRzaGFrZV9tc2cSDAoEdHlwZRgBIAEoBRIKCgJpZBgCIAEoBRIMCgRu",
             "YW1lGAMgASgJEgoKAmlwGAQgASgJEgwKBHBvcnQYBSABKAUSDQoFc3RhdGUY",
-            "BiABKAUSDwoHc2Vzc2lvbhgHIAEoCSJ8ChlSRVNQX3NlcnZlcl9oYW5kc2hh",
-            "a2VfbXNnEg4KBnJlc3VsdBgBIAEoBRIMCgR0eXBlGAIgASgFEgoKAmlkGAMg",
-            "ASgFEgwKBG5hbWUYBCABKAkSCgoCaXAYBSABKAkSDAoEcG9ydBgGIAEoBRIN",
-            "CgVzdGF0ZRgHIAEoBSIjChNSRVFfc2VydmVyX2xpc3RfbXNnEgwKBHR5cGUY",
-            "ASABKAUiUgoUUkVTUF9zZXJ2ZXJfbGlzdF9tc2cSOgoHc2VydmVycxgBIAMo",
+            "BiABKAUifAoZUkVTUF9zZXJ2ZXJfaGFuZHNoYWtlX21zZxIOCgZyZXN1bHQY",
+            "ASABKAUSDAoEdHlwZRgCIAEoBRIKCgJpZBgDIAEoBRIMCgRuYW1lGAQgASgJ",
+            "EgoKAmlwGAUgASgJEgwKBHBvcnQYBiABKAUSDQoFc3RhdGUYByABKAUiIwoT",
+            "UkVRX3NlcnZlcl9saXN0X21zZxIMCgR0eXBlGAEgASgFIlIKFFJFU1Bfc2Vy",
+            "dmVyX2xpc3RfbXNnEjoKB3NlcnZlcnMYASADKAsyKS5nYW1lLnFlLmNvbW1v",
+            "bi5tc2cucHJvdG8uREFUQV9zZXJ2ZXJfbXNnImkKElNTX3NlcnZlcl9zeW5j",
+            "X21zZxIMCgR0eXBlGAEgASgFEgoKAmlkGAIgASgFEjkKBnNlcnZlchgDIAEo",
             "CzIpLmdhbWUucWUuY29tbW9uLm1zZy5wcm90by5EQVRBX3NlcnZlcl9tc2ci",
-            "aQoSU1Nfc2VydmVyX3N5bmNfbXNnEgwKBHR5cGUYASABKAUSCgoCaWQYAiAB",
-            "KAUSOQoGc2VydmVyGAMgASgLMikuZ2FtZS5xZS5jb21tb24ubXNnLnByb3Rv",
-            "LkRBVEFfc2VydmVyX21zZyI1ChhTU19nYW1lX3NlcnZlcl9ldmVudF9tc2cS",
-            "CgoCaWQYASABKAUSDQoFZXZlbnQYAiABKAwiIgoSUkVRX3JvdXRlX2xpc3Rf",
-            "bXNnEgwKBHR5cGUYASABKAUiTwoTUkVTUF9yb3V0ZV9saXN0X21zZxI4CgZy",
-            "b3V0ZXMYASADKAsyKC5nYW1lLnFlLmNvbW1vbi5tc2cucHJvdG8uREFUQV9y",
-            "b3V0ZV9tc2ciRQoRUkVRX3JvdXRlX3NldF9tc2cSDAoEdHlwZRgBIAEoBRIQ",
-            "CghwbGF5ZXJJZBgCIAEoAxIQCghzZXJ2ZXJJZBgDIAEoBSJWChJSRVNQX3Jv",
-            "dXRlX3NldF9tc2cSDgoGcmVzdWx0GAEgASgFEgwKBHR5cGUYAiABKAUSEAoI",
-            "cGxheWVySWQYAyABKAMSEAoIc2VydmVySWQYBCABKAVCEVoPcWUvcHJvdG8v",
-            "c2VydmVyYgZwcm90bzM="));
+            "NQoYU1NfZ2FtZV9zZXJ2ZXJfZXZlbnRfbXNnEgoKAmlkGAEgASgFEg0KBWV2",
+            "ZW50GAIgASgMIiIKElJFUV9yb3V0ZV9saXN0X21zZxIMCgR0eXBlGAEgASgF",
+            "Ik8KE1JFU1Bfcm91dGVfbGlzdF9tc2cSOAoGcm91dGVzGAEgAygLMiguZ2Ft",
+            "ZS5xZS5jb21tb24ubXNnLnByb3RvLkRBVEFfcm91dGVfbXNnIkUKEVJFUV9y",
+            "b3V0ZV9zZXRfbXNnEgwKBHR5cGUYASABKAUSEAoIcGxheWVySWQYAiABKAUS",
+            "EAoIc2VydmVySWQYAyABKAUiVgoSUkVTUF9yb3V0ZV9zZXRfbXNnEg4KBnJl",
+            "c3VsdBgBIAEoBRIMCgR0eXBlGAIgASgFEhAKCHBsYXllcklkGAMgASgFEhAK",
+            "CHNlcnZlcklkGAQgASgFQhFaD3FlL3Byb3RvL3NlcnZlcmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.DATA_server_msg), global::Game.Qe.Common.Msg.Proto.DATA_server_msg.Parser, new[]{ "Type", "Id", "Name", "Ip", "Port", "State" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.DATA_route_msg), global::Game.Qe.Common.Msg.Proto.DATA_route_msg.Parser, new[]{ "Type", "PlayerId", "ServerId" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.REQ_server_handshake_msg), global::Game.Qe.Common.Msg.Proto.REQ_server_handshake_msg.Parser, new[]{ "Type", "Id", "Name", "Ip", "Port", "State", "Session" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.REQ_server_handshake_msg), global::Game.Qe.Common.Msg.Proto.REQ_server_handshake_msg.Parser, new[]{ "Type", "Id", "Name", "Ip", "Port", "State" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.RESP_server_handshake_msg), global::Game.Qe.Common.Msg.Proto.RESP_server_handshake_msg.Parser, new[]{ "Result", "Type", "Id", "Name", "Ip", "Port", "State" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.REQ_server_list_msg), global::Game.Qe.Common.Msg.Proto.REQ_server_list_msg.Parser, new[]{ "Type" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Game.Qe.Common.Msg.Proto.RESP_server_list_msg), global::Game.Qe.Common.Msg.Proto.RESP_server_list_msg.Parser, new[]{ "Servers" }, null, null, null, null),
@@ -123,7 +122,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///服务器类型
+    ///* 服务器类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -138,7 +137,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IdFieldNumber = 2;
     private int id_;
     /// <summary>
-    ///服务器ID
+    ///* 服务器ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -153,7 +152,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int NameFieldNumber = 3;
     private string name_ = "";
     /// <summary>
-    ///服务器名称
+    ///* 服务器名称 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -168,7 +167,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IpFieldNumber = 4;
     private string ip_ = "";
     /// <summary>
-    ///服务器IP地址
+    ///* 服务器IP地址 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -183,7 +182,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int PortFieldNumber = 5;
     private int port_;
     /// <summary>
-    ///服务器端口
+    ///* 服务器端口 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -198,7 +197,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int StateFieldNumber = 6;
     private int state_;
     /// <summary>
-    ///服务器状态
+    ///* 服务器状态 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -521,7 +520,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///服务器类型
+    ///* 服务器类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -534,13 +533,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "playerId" field.</summary>
     public const int PlayerIdFieldNumber = 2;
-    private long playerId_;
+    private int playerId_;
     /// <summary>
-    ///玩家ID
+    ///* 玩家ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PlayerId {
+    public int PlayerId {
       get { return playerId_; }
       set {
         playerId_ = value;
@@ -551,7 +550,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ServerIdFieldNumber = 3;
     private int serverId_;
     /// <summary>
-    ///对端ID 为0则是删除
+    ///* 对端ID 为0则是删除 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -588,7 +587,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Type != 0) hash ^= Type.GetHashCode();
-      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
+      if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (ServerId != 0) hash ^= ServerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -612,9 +611,9 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Type);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (ServerId != 0) {
         output.WriteRawTag(24);
@@ -634,9 +633,9 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Type);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (ServerId != 0) {
         output.WriteRawTag(24);
@@ -655,8 +654,8 @@ namespace Game.Qe.Common.Msg.Proto {
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
       }
-      if (PlayerId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      if (PlayerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
       if (ServerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
@@ -676,7 +675,7 @@ namespace Game.Qe.Common.Msg.Proto {
       if (other.Type != 0) {
         Type = other.Type;
       }
-      if (other.PlayerId != 0L) {
+      if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
       if (other.ServerId != 0) {
@@ -706,7 +705,7 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
@@ -737,7 +736,7 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
@@ -792,7 +791,6 @@ namespace Game.Qe.Common.Msg.Proto {
       ip_ = other.ip_;
       port_ = other.port_;
       state_ = other.state_;
-      session_ = other.session_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -806,7 +804,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///对端类型
+    ///* 对端类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -821,7 +819,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IdFieldNumber = 2;
     private int id_;
     /// <summary>
-    ///对端ID
+    ///* 对端ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -836,7 +834,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int NameFieldNumber = 3;
     private string name_ = "";
     /// <summary>
-    ///对端名称
+    ///* 对端名称 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -851,7 +849,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IpFieldNumber = 4;
     private string ip_ = "";
     /// <summary>
-    ///对端IP地址
+    ///* 对端IP地址 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -866,7 +864,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int PortFieldNumber = 5;
     private int port_;
     /// <summary>
-    ///对端端口
+    ///* 对端端口 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -881,7 +879,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int StateFieldNumber = 6;
     private int state_;
     /// <summary>
-    ///服务器状态
+    ///* 服务器状态 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -889,21 +887,6 @@ namespace Game.Qe.Common.Msg.Proto {
       get { return state_; }
       set {
         state_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "session" field.</summary>
-    public const int SessionFieldNumber = 7;
-    private string session_ = "";
-    /// <summary>
-    ///会话ID
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public string Session {
-      get { return session_; }
-      set {
-        session_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
     }
 
@@ -928,7 +911,6 @@ namespace Game.Qe.Common.Msg.Proto {
       if (Ip != other.Ip) return false;
       if (Port != other.Port) return false;
       if (State != other.State) return false;
-      if (Session != other.Session) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -942,7 +924,6 @@ namespace Game.Qe.Common.Msg.Proto {
       if (Ip.Length != 0) hash ^= Ip.GetHashCode();
       if (Port != 0) hash ^= Port.GetHashCode();
       if (State != 0) hash ^= State.GetHashCode();
-      if (Session.Length != 0) hash ^= Session.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -985,10 +966,6 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(48);
         output.WriteInt32(State);
       }
-      if (Session.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Session);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1023,10 +1000,6 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(48);
         output.WriteInt32(State);
       }
-      if (Session.Length != 0) {
-        output.WriteRawTag(58);
-        output.WriteString(Session);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1054,9 +1027,6 @@ namespace Game.Qe.Common.Msg.Proto {
       }
       if (State != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(State);
-      }
-      if (Session.Length != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeStringSize(Session);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1087,9 +1057,6 @@ namespace Game.Qe.Common.Msg.Proto {
       }
       if (other.State != 0) {
         State = other.State;
-      }
-      if (other.Session.Length != 0) {
-        Session = other.Session;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1134,10 +1101,6 @@ namespace Game.Qe.Common.Msg.Proto {
             State = input.ReadInt32();
             break;
           }
-          case 58: {
-            Session = input.ReadString();
-            break;
-          }
         }
       }
     #endif
@@ -1179,10 +1142,6 @@ namespace Game.Qe.Common.Msg.Proto {
           }
           case 48: {
             State = input.ReadInt32();
-            break;
-          }
-          case 58: {
-            Session = input.ReadString();
             break;
           }
         }
@@ -1247,7 +1206,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ResultFieldNumber = 1;
     private int result_;
     /// <summary>
-    ///握手结果
+    ///* 握手结果 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1262,7 +1221,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 2;
     private int type_;
     /// <summary>
-    ///对端类型
+    ///* 对端类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1277,7 +1236,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IdFieldNumber = 3;
     private int id_;
     /// <summary>
-    ///对端ID
+    ///* 对端ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1292,7 +1251,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int NameFieldNumber = 4;
     private string name_ = "";
     /// <summary>
-    ///对端名称
+    ///* 对端名称 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1307,7 +1266,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IpFieldNumber = 5;
     private string ip_ = "";
     /// <summary>
-    ///对端IP地址
+    ///* 对端IP地址 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1322,7 +1281,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int PortFieldNumber = 6;
     private int port_;
     /// <summary>
-    ///对端端口
+    ///* 对端端口 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1337,7 +1296,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int StateFieldNumber = 7;
     private int state_;
     /// <summary>
-    ///服务器状态
+    ///* 服务器状态 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -1682,7 +1641,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///服务器类型
+    ///* 服务器类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2072,7 +2031,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///对端类型
+    ///* 对端类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2087,7 +2046,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int IdFieldNumber = 2;
     private int id_;
     /// <summary>
-    ///对端ID
+    ///* 对端ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2102,7 +2061,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ServerFieldNumber = 3;
     private global::Game.Qe.Common.Msg.Proto.DATA_server_msg server_;
     /// <summary>
-    ///同步服务器信息
+    ///* 同步服务器信息 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2312,7 +2271,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///服务器之间传递服务器事件
+  ///* 服务器之间传递服务器事件 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SS_game_server_event_msg : pb::IMessage<SS_game_server_event_msg>
@@ -2598,7 +2557,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///服务器类型
+    ///* 服务器类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2988,7 +2947,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 1;
     private int type_;
     /// <summary>
-    ///服务器类型
+    ///* 服务器类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3001,13 +2960,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "playerId" field.</summary>
     public const int PlayerIdFieldNumber = 2;
-    private long playerId_;
+    private int playerId_;
     /// <summary>
-    ///玩家ID
+    ///* 玩家ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PlayerId {
+    public int PlayerId {
       get { return playerId_; }
       set {
         playerId_ = value;
@@ -3018,7 +2977,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ServerIdFieldNumber = 3;
     private int serverId_;
     /// <summary>
-    ///对端ID 为0时则是删除
+    ///* 对端ID 为0时则是删除 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3055,7 +3014,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public override int GetHashCode() {
       int hash = 1;
       if (Type != 0) hash ^= Type.GetHashCode();
-      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
+      if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (ServerId != 0) hash ^= ServerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3079,9 +3038,9 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Type);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (ServerId != 0) {
         output.WriteRawTag(24);
@@ -3101,9 +3060,9 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(8);
         output.WriteInt32(Type);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(16);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (ServerId != 0) {
         output.WriteRawTag(24);
@@ -3122,8 +3081,8 @@ namespace Game.Qe.Common.Msg.Proto {
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
       }
-      if (PlayerId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      if (PlayerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
       if (ServerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
@@ -3143,7 +3102,7 @@ namespace Game.Qe.Common.Msg.Proto {
       if (other.Type != 0) {
         Type = other.Type;
       }
-      if (other.PlayerId != 0L) {
+      if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
       if (other.ServerId != 0) {
@@ -3173,7 +3132,7 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
@@ -3204,7 +3163,7 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 16: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 24: {
@@ -3270,7 +3229,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ResultFieldNumber = 1;
     private int result_;
     /// <summary>
-    ///路由设置结果
+    ///* 路由设置结果 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3285,7 +3244,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TypeFieldNumber = 2;
     private int type_;
     /// <summary>
-    ///服务器类型
+    ///* 服务器类型 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3298,13 +3257,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "playerId" field.</summary>
     public const int PlayerIdFieldNumber = 3;
-    private long playerId_;
+    private int playerId_;
     /// <summary>
-    ///玩家ID
+    ///* 玩家ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PlayerId {
+    public int PlayerId {
       get { return playerId_; }
       set {
         playerId_ = value;
@@ -3315,7 +3274,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ServerIdFieldNumber = 4;
     private int serverId_;
     /// <summary>
-    ///对端ID 为0时则是删除
+    ///* 对端ID 为0时则是删除 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -3354,7 +3313,7 @@ namespace Game.Qe.Common.Msg.Proto {
       int hash = 1;
       if (Result != 0) hash ^= Result.GetHashCode();
       if (Type != 0) hash ^= Type.GetHashCode();
-      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
+      if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (ServerId != 0) hash ^= ServerId.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3382,9 +3341,9 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(16);
         output.WriteInt32(Type);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (ServerId != 0) {
         output.WriteRawTag(32);
@@ -3408,9 +3367,9 @@ namespace Game.Qe.Common.Msg.Proto {
         output.WriteRawTag(16);
         output.WriteInt32(Type);
       }
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(24);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (ServerId != 0) {
         output.WriteRawTag(32);
@@ -3432,8 +3391,8 @@ namespace Game.Qe.Common.Msg.Proto {
       if (Type != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(Type);
       }
-      if (PlayerId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      if (PlayerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
       if (ServerId != 0) {
         size += 1 + pb::CodedOutputStream.ComputeInt32Size(ServerId);
@@ -3456,7 +3415,7 @@ namespace Game.Qe.Common.Msg.Proto {
       if (other.Type != 0) {
         Type = other.Type;
       }
-      if (other.PlayerId != 0L) {
+      if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
       if (other.ServerId != 0) {
@@ -3490,7 +3449,7 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 24: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 32: {
@@ -3525,7 +3484,7 @@ namespace Game.Qe.Common.Msg.Proto {
             break;
           }
           case 24: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 32: {

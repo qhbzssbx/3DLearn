@@ -5,14 +5,10 @@ using QFramework;
 using System;
 using System.Reflection;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using UnityEditor;
-using YooAsset;
-using UnityEngine.Rendering.Universal;
 
 namespace P5Game.UI
 {
-    public interface IUIPanel : ICanGetModel
+    public interface IUIPanel : ICanGetModel, ICanGetSystem
     {
         public void Show();
         public void Hide();
@@ -111,18 +107,18 @@ namespace P5Game.UI
                     panel = uiGo.AddComponent(panelType) as UIPanel;
                 }
                 panel.handle = assetHandle;
-                
+
 
                 var canvas = uiGo.GetComponent<Canvas>();
                 if (canvas != null)
-                {   
+                {
                     canvas.worldCamera = this.GetSystem<CameraSystem>().UICamera;
                     sortingOrder += uiLayerInterval;
                     canvas.sortingOrder = sortingOrder;
                 }
                 uiGo.transform.SetParent(uiParent);
                 uiGo.transform.localPosition = Vector3.zero;
-                uiGo.transform.localScale = new Vector3(1,1,1);
+                uiGo.transform.localScale = new Vector3(1, 1, 1);
 
                 uIPanelStacks.Push(panel);
                 panel.Show();
@@ -279,4 +275,23 @@ namespace P5Game.UI
             return new DefaultAssetHandle(Resources.Load<GameObject>(path));
         }
     }
+
+    /// <summary>
+    /// YooAsset加载器
+    /// </summary>
+    // public class YooAssetUIResourceLoader : IUIResourceLoader
+    // {
+    //     // private ResourcePackage package = YooAssets.TryGetPackage("DefaultPackage");
+    //     // public IAssetHandle LoadPrefab(string path)
+    //     // {
+    //     //     return new YooAssetAssetHandle();
+    //     // }
+
+    //     private async UniTask<IAssetHandle> Load(string path)
+    //     {
+    //         AssetHandle handle = package.LoadAssetAsync<AudioClip>("Assets/GameRes/Audio/bgMusic.mp3");
+    //         await handle.ToUniTask();
+    //         return new YooAssetAssetHandle(handle);
+    //     }
+    // }
 }

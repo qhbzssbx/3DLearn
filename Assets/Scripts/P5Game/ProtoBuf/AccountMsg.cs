@@ -26,7 +26,7 @@ namespace Game.Qe.Common.Msg.Proto {
           string.Concat(
             "ChBBY2NvdW50TXNnLnByb3RvEhhnYW1lLnFlLmNvbW1vbi5tc2cucHJvdG8i",
             "HQoMQ1NfbG9naW5fbXNnEg0KBXRva2VuGAEgASgJIj8KDFNDX2xvZ2luX21z",
-            "ZxIQCghwbGF5ZXJJZBgBIAEoAxINCgV0b2tlbhgCIAEoCRIOCgZyZXN1bHQY",
+            "ZxIQCghwbGF5ZXJJZBgBIAEoBRINCgV0b2tlbhgCIAEoCRIOCgZyZXN1bHQY",
             "AyABKAUiEgoQQ1NfcGhvbmVfc21zX21zZyISChBTQ19waG9uZV9zbXNfbXNn",
             "IhMKEUNTX3Bob25lX2JpbmRfbXNnIhMKEVNDX3Bob25lX2JpbmRfbXNnQhJa",
             "EHFlL3Byb3RvL2FjY291bnRiBnByb3RvMw=="));
@@ -46,7 +46,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
   #region Messages
   /// <summary>
-  ///请求登入
+  ///* 请求登入 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CS_login_msg : pb::IMessage<CS_login_msg>
@@ -97,7 +97,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TokenFieldNumber = 1;
     private string token_ = "";
     /// <summary>
-    ///用户凭证
+    ///* 用户凭证 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -250,7 +250,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///登入协议
+  ///* 登入协议 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SC_login_msg : pb::IMessage<SC_login_msg>
@@ -301,13 +301,13 @@ namespace Game.Qe.Common.Msg.Proto {
 
     /// <summary>Field number for the "playerId" field.</summary>
     public const int PlayerIdFieldNumber = 1;
-    private long playerId_;
+    private int playerId_;
     /// <summary>
-    ///玩家ID
+    ///* 玩家ID *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public long PlayerId {
+    public int PlayerId {
       get { return playerId_; }
       set {
         playerId_ = value;
@@ -318,7 +318,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int TokenFieldNumber = 2;
     private string token_ = "";
     /// <summary>
-    ///用户token
+    ///* 用户token *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -333,7 +333,7 @@ namespace Game.Qe.Common.Msg.Proto {
     public const int ResultFieldNumber = 3;
     private int result_;
     /// <summary>
-    ///结果 0:登入失败 1:登入成功
+    ///* 结果 0:登入失败 1:登入成功 *
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -369,7 +369,7 @@ namespace Game.Qe.Common.Msg.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
-      if (PlayerId != 0L) hash ^= PlayerId.GetHashCode();
+      if (PlayerId != 0) hash ^= PlayerId.GetHashCode();
       if (Token.Length != 0) hash ^= Token.GetHashCode();
       if (Result != 0) hash ^= Result.GetHashCode();
       if (_unknownFields != null) {
@@ -390,9 +390,9 @@ namespace Game.Qe.Common.Msg.Proto {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (Token.Length != 0) {
         output.WriteRawTag(18);
@@ -412,9 +412,9 @@ namespace Game.Qe.Common.Msg.Proto {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (PlayerId != 0L) {
+      if (PlayerId != 0) {
         output.WriteRawTag(8);
-        output.WriteInt64(PlayerId);
+        output.WriteInt32(PlayerId);
       }
       if (Token.Length != 0) {
         output.WriteRawTag(18);
@@ -434,8 +434,8 @@ namespace Game.Qe.Common.Msg.Proto {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
-      if (PlayerId != 0L) {
-        size += 1 + pb::CodedOutputStream.ComputeInt64Size(PlayerId);
+      if (PlayerId != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PlayerId);
       }
       if (Token.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Token);
@@ -455,7 +455,7 @@ namespace Game.Qe.Common.Msg.Proto {
       if (other == null) {
         return;
       }
-      if (other.PlayerId != 0L) {
+      if (other.PlayerId != 0) {
         PlayerId = other.PlayerId;
       }
       if (other.Token.Length != 0) {
@@ -484,7 +484,7 @@ namespace Game.Qe.Common.Msg.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
           case 8: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 18: {
@@ -515,7 +515,7 @@ namespace Game.Qe.Common.Msg.Proto {
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
           case 8: {
-            PlayerId = input.ReadInt64();
+            PlayerId = input.ReadInt32();
             break;
           }
           case 18: {
@@ -534,7 +534,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///请求手机短信验证码
+  ///* 请求手机短信验证码 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CS_phone_sms_msg : pb::IMessage<CS_phone_sms_msg>
@@ -698,7 +698,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///返回手机短信验证码
+  ///* 返回手机短信验证码 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SC_phone_sms_msg : pb::IMessage<SC_phone_sms_msg>
@@ -862,7 +862,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///请求手机绑定
+  ///* 请求手机绑定 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class CS_phone_bind_msg : pb::IMessage<CS_phone_bind_msg>
@@ -1026,7 +1026,7 @@ namespace Game.Qe.Common.Msg.Proto {
   }
 
   /// <summary>
-  ///返回手机绑定
+  ///* 返回手机绑定 *
   /// </summary>
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SC_phone_bind_msg : pb::IMessage<SC_phone_bind_msg>

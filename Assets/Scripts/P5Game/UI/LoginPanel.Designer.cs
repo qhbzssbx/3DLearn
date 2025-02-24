@@ -2,21 +2,25 @@
 using Sirenix.OdinInspector;
 #endif
 using UnityEngine;
-public partial class LoginPanel : MonoBehaviour
+
+namespace P5Game.UI
 {
-
-	public TMPro.TMP_InputField ipt_account;
-
-	public TMPro.TMP_InputField ipt_password;
-
-	public UnityEngine.UI.Button Button;
-	public GameObject go;
-
-	#if UNITY_EDITOR
-	[Button("AutoBind")]
-	public void AutoBind()
+	public partial class LoginPanel
 	{
-		go = gameObject;
+
+		public TMPro.TMP_InputField ipt_account;
+
+		public TMPro.TMP_InputField ipt_password;
+
+		public UnityEngine.UI.Button Button;
+		public GameObject go;
+
+#if UNITY_EDITOR
+        [Button("AutoBind")]
+		public void AutoBind()
+		{
+			go = gameObject;
+		}
+		#endif
 	}
-	#endif
 }

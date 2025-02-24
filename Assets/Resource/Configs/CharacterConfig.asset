@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56a8c89a25d494d4e9da1b3cb2470480, type: 3}
-  m_Name: CharacterConfig
+  m_Name: Assets/Resource/Configs/CharacterConfig.asset
   m_EditorClassIdentifier: 
   WalkSpeed: 1.5
   CombatMoveSpeed: 2

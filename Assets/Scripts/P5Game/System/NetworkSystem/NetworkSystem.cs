@@ -38,10 +38,12 @@ public class NetworkManager : AbstractSystem
     // 接收服务器消息
     public void OnReceiveMessage(short messageId, byte[] message)
     {
+                LogUtility.Log("!!!!!!   " + messageId);
         if (messageHandlers.TryGetValue(messageId, out var handler))
         {
             if (ProtobufCodeInfo.ProtoCodeToType.TryGetValue(messageId, out var transferFunc))
             {
+                var aaa = transferFunc(message);
                 handler.Invoke(transferFunc(message));
             }
         }
@@ -62,6 +64,16 @@ public class NetworkManager : AbstractSystem
     {
         tcpManager.CallBack -= OnReceiveMessage;
         tcpManager.Disconnect();
+    }
+
+    public void StartConnect()
+    {
+        tcpManager.Connect("192.168.10.22", 8801);
+        Application.quitting += tcpManager.Disconnect;
+    }
+    public void SendMsg<T>(T message) where T : IMessage, new()
+    {
+        tcpManager.SendMovement<T>(message);
     }
 }
 
@@ -122,6 +134,7 @@ public class TcpManager : Singleton<TcpManager>
             // 启动接收线程
             _receiveThread = new Thread(ReceiveData);
             _receiveThread.Start();
+            Debug.LogError("连接成功");
         }
         catch (Exception e)
         {
@@ -325,8 +338,8 @@ public class TcpManager : Singleton<TcpManager>
                     if (bodyLen >= len)
                     {
                         body = CommonUtility.XorByte(body, len);
+                        Debug.Log("接收到消息: " + code);
                         CallBack?.Invoke(code, body);
-
                     }
                     buffLen = 0;
                 }

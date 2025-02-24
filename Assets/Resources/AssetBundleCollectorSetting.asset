@@ -82,3 +82,24 @@ MonoBehaviour:
         FilterRuleName: CollectAll
         AssetTags: 
         UserData: 
+    - GroupName: config
+      GroupDesc: "\u914D\u7F6E\u4FE1\u606F"
+      AssetTags: 
+      ActiveRuleName: EnableGroup
+      Collectors:
+      - CollectPath: Assets/Resource/Configs/CharacterConfig.asset
+        CollectorGUID: 40eefd86a10d58c40b623a38de78082d
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
+      - CollectPath: Assets/Resource/Configs/InputConfig.asset
+        CollectorGUID: 5bf0351dcbcc7f740a5232a0404d5ab6
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
